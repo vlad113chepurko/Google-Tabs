@@ -1,5 +1,5 @@
 import "./App.css";
-import { components } from "./components";
+import { components } from "./components/index";
 export default function App() {
   return (
     <div className="app">

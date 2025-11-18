@@ -1,0 +1,50 @@
+.tabs__overflow-area {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  width: 56px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+.menu__button {
+  outline: none;
+  border: none;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(70, 144, 226, 1);
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  transition: background 0.12s ease, opacity 0.12s ease, transform 0.12s ease;
+  will-change: opacity, transform;
+}
+
+.menu__button--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.98);
+}
+
+.menu__button img {
+  transform: rotate(180deg);
+  transition: transform 0.25s ease;
+}
+.menu__button[aria-expanded="true"] img {
+  transform: rotate(0deg);
+}
+
+.tab-item__placeholder {
+  height: 50px;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  box-sizing: border-box;
+}

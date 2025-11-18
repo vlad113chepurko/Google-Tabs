@@ -1,6 +1,7 @@
 export type Tab = {
-  id: number;
+  id: string;
   title: string;
-  src: string;
-  pinned: boolean;
+  src?: string;
+  url: string;
+  pinned?: boolean;
 };
