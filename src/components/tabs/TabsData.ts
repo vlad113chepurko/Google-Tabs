@@ -1,4 +1,4 @@
-export const tabs = [
+export const tabsData = [
   {
     id: 1,
     title: "Dashboard",
