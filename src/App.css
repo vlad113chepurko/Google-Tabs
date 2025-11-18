@@ -1,10 +1,8 @@
 .app {
   width: 100vw;
   height: 100vh;
-  border: 1px solid red;
-
+  border: 10px solid rgba(174, 182, 206, 0.2);
   max-width: 1700px;
-
   margin: 0 auto;
-  padding: 10px;
+  box-sizing: border-box;
 }

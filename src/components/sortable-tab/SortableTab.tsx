@@ -1,7 +1,8 @@
 import { useSortable } from "@dnd-kit/sortable";
+import type { Tab } from "../../types/Tab.type";
 import { CSS } from "@dnd-kit/utilities";
 
-export default function SortableTab({ tab }: { tab: any }) {
+export default function SortableTab({ tab }: { tab: Tab }) {
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({ id: tab.id });
 
